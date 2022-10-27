@@ -3,8 +3,9 @@ Simple denoising autoencoder (DAE) written in python(3.7.3), using the pytorch f
 
 Deep learning just got deeper.
 
-INSTALL REQUIREMENTS:
-
-- pip install matplotlib
-- pip install torch
-- pip install torchvision
+# INSTALL REQUIREMENTS:
+```
+pip install matplotlib
+pip install torch
+pip install torchvision
+```
