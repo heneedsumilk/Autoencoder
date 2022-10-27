@@ -43,16 +43,18 @@ class Autoencoder(nn.Module):
            
         )
 ```
-We create the model, set the criteria, and use the torch.optim package by constructing the object 'optimizer'. This object holds the current state, and will update the parameters based on the computed gradients. We utilize the Adam optimization algorithm, since it's gradient based. Documentation for torch.optim.Adam: https://pytorch.org/docs/stable/generated/torch.optim.Adam.html
+We create the model, set the criteria, and use the torch.optim package by constructing the object 'optimizer'. This object holds the current state, and will update the parameters based on the computed gradients. We utilize the Adam optimization algorithm since it's gradient based, and set the learning rate and weight decay. 
+Documentation for torch.optim.Adam: https://pytorch.org/docs/stable/generated/torch.optim.Adam.html
+Documentation for torch.optim: https://pytorch.org/docs/stable/optim.html
 
 ```python
 model = Autoencoder()
 criteria = nn.MSELoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-3, weight_decay=1e-5)
 ```
-The rest of the code is self-explanatory. We set a for loop to complete 8 passes of the entire dataset, and plot every outher result.
+The rest of the program is just setting a for loop to complete 8 passes of the entire dataset, and plotting the result of every other epoch.
 # Output
-This test was run in VSCode. The model trains against data provided by torchvision, completing 8 passes of the entire dataset before plotting the results after every other pass of the dataset. 
+This test was run in VSCode.
 
 <img width="635" alt="Screenshot 2022-10-27 at 21 16 47" src="https://user-images.githubusercontent.com/42718681/198379039-fd8f57ea-bd27-48d6-83c5-71126b85482a.png">
 
