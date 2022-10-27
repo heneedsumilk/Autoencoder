@@ -5,5 +5,6 @@ Deep learning just got deeper.
 
 INSTALL REQUIREMENTS:
 
+- pip install matplotlib
 - pip install torch
 - pip install torchvision
