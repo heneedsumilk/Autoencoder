@@ -5,7 +5,5 @@ Deep learning just got deeper.
 
 # Requirements
 ```
-pip install matplotlib
-pip install torch
-pip install torchvision
+pip install -r requirements.txt
 ```
