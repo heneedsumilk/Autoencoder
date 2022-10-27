@@ -73,7 +73,7 @@ for epoch in range(num_epochs):
 
 
 # %%
-for k in range(0, num_epochs, 3):
+for k in range(0, num_epochs, 2):
     plt.figure(figsize=(9, 2))
     plt.gray()
     imgs = outputs[k][1].detach().numpy()
