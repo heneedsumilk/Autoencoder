@@ -1,6 +1,5 @@
 # Autoencoder
-Simple denoising autoencoder (DAE) written in python, using the pytorch framework. Utilizing a convolutional neural network to minimize loss. 
-
+Simple denoising autoencoder (DAE) written in python, using the pytorch framework. 
 Deep learning just got... derp
 
 # Requirements
